@@ -1,0 +1,19 @@
+:root {
+    --col-bg-primary: hsl(0deg, 0%, 25%);
+    --col-fg-primary: hsl(0deg, 0%, 100%);
+    --col-bg-secondary: hsl(0deg, 0%, 50%);
+    --col-fg-secondary: hsl(0deg, 0%, 100%);
+    --col-bg: hsl(0deg, 0%, 100%);
+    --col-fg: hsl(0deg, 0%, 25%);
+    --col-link: hsl(260deg, 100%, 75%);
+}
+.primary { color: var(--col-fg-primary); background: var(--col-bg-primary); }
+.secondary { color: var(--col-fg-secondary); background: var(--col-bg-secondary); }
+
+body { font-family: Arial; margin: 0; color: var(--col-fg); background: var(--col-bg); }
+main { padding: 1rem; }
+h1 { margin: 0; padding: 1rem; }
+nav { display: flex; gap: 1rem; }
+  nav a { padding: 1rem; font-weight: bold; color: var(--col-fg-secondary); transition: .2s; }
+  nav a:hover { color: var(--col-fg-primary); background: var(--col-bg-primary); }
+a { color: var(--col-link); text-decoration: none; }

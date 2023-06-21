@@ -1,0 +1,14 @@
+<template>
+    <h2>${heading}</h2>
+    <form submit.trigger="addItem()">
+        <input value.bind="item" id="inputItem" autofocus>
+        <button disabled.bind="!item">Add</button>
+    </form>
+
+    <ul>
+        <li repeat.for="item of itemList">
+            ${item}
+            <button click.trigger="removeItem($index)">X</button>
+        </li>
+    </ul>
+</template>

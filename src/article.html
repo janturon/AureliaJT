@@ -1,0 +1,13 @@
+<template>
+    <div with.bind="activeArticle" if.bind="activeArticle">
+        <h2>${title}</h2>
+        <div>${contents}</div>
+    </div>
+
+    <div if.bind="!activeArticle">
+        <h2>Pick an article</h2>
+        <ul repeat.for="article of articles">
+            <li><a href="/article/${$index}">${article.title}</a>
+        </ul>
+    </div>
+</template>
